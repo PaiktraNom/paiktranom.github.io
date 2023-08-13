@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html>
+<head>
+<script>
+    function loadPage(a){
+        window.location=a + ".html";
+        // Removing active class from all current pages
+        $("li").removeClass("active");
+        // Adding active class to the button that is pressed for CSS
+        $("$" + a).addClass("active");
+
+    }
+</script>
+</head>
 <body>
     <p>This is base.html</p>
 
     <ul class="nav">
-        <li><a href="#" onclick="location.href=index.html">Home</a></li>
-        <li><a href="about" onclick="location.href=about.html">About</a></li>
-        <li><a href="contact" onclick="location.href=contact.html">Contact Me</a></li>
+        <li><input type = "button" id="index" value = "home" onclick="loadPage('index')"></li>
+        <li><input type = "button" id="about" value = "about" onclick="loadPage('about')"></li>
+        <li><input type = "button" id="contact" value = "contact" onclick="loadPage('contact')"></li>
     </ul>
+
+
+
 
 </body>
 </html>
+
