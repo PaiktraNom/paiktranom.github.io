@@ -1,7 +1,17 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+
+<html> 
+  <head> 
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> 
+    $(document).ready(function(){
+      $("#includedContent").load("base.html"); 
+    });
+    </script>
+  </head> 
+
+  <body> 
+     <div id="includedContent"></div>
+     <p>This is index.html</p>
+  </body> 
 </html>
