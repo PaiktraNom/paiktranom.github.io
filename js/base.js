@@ -1,3 +1,4 @@
 $(document).ready(function(){
-    $("#includedContent").load("base.html"); 
+    $("#base").load("base.html");
+    $("#footer").load("footer.html")
   });
