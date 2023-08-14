@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'anybody';
+    src: url('../static/font/Anybody-VariableFont_wdth\,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html * {
+    font-size: 16px;
+    line-height: 1.625;
+    color: gray;
+    font-family: anybody;
+  }
+
 @keyframes fadeinall {
     0% {
       opacity: 1; }
@@ -12,3 +26,57 @@
       -webkit-transform: translateY(-100%);
       transform: translateY(-100%);
       z-index: -1; } }
+
+body {
+    margin:0;
+    padding:0;
+}
+
+.content{
+    margin-top: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 2rem;
+}
+
+#content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+  }
+
+footer {
+    position: absolute;
+    margin-top: 2rem;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;   /* Footer height */
+    text-align: center;
+    margin: auto;
+    
+    background-color: rgb(37, 37, 37);
+  }
+
+header h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.navbar{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.nav-item{
+    height: 100%;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+
+.section-header{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(180, 180, 180);
+}

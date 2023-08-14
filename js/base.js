@@ -1,8 +1,8 @@
 $(".nav-item button").on("click", function(e) {
     if ($(this).attr("class") === "nav"){
         var input = $(this).val(); 
-        $("button").removeClass("active");
-        $(this).toggleClass("active");
+        $("button").parent().removeClass("active");
+        $(this).parent().toggleClass("active");
         // prevent page submit
         e.preventDefault();
         $(".content").load(input);
