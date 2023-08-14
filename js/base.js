@@ -1,6 +1,12 @@
 $(document).ready(function(){
-    $("#base").load("base.html");
-    $("#footer").load("footer.html")
-
-    
-  });
+    $(document).ready(function(){
+        $("button").on("click", function(e) {
+            var input = $(this).val();
+            // prevent page submit
+            e.preventDefault(); 
+            $("button").removeClass("active");
+            $(this).toggleClass("active");
+            $(".page").load(input);
+        });
+    });
+});

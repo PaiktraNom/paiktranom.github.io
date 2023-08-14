@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="js/jquery.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").on("click", function(e) {
+        var input = $(this).val();
+        // prevent page submit
+        e.preventDefault(); 
+        $("button").removeClass("active");
+        $(this).toggleClass("active");
+    });
+});
+</script>
+</head>
+<body>
+    <p>This is header.html</p>
+</body>
+</html>
+
