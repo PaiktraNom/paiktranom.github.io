@@ -68,6 +68,7 @@ header h1{
 }
 .nav-item{
     height: 100%;
+    margin: 1rem;
 }
 
 #page-container {
