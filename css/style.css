@@ -63,6 +63,7 @@ header h1{
 }
 
 .home-header{
+    margin-left:10rem;
     font-size: 50px;
     font-weight: bold;
     color: rgb(180, 180, 180);
