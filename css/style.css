@@ -73,14 +73,15 @@ header h1{
 
 #page-container {
     position: relative;
-    min-height: 100%;
+    min-height: 100vh;
   }
 
 .row {
-    display: flex;
+    display: inline-block;
     .text{
         align-self: flex-end;
     }
+
 }
 
 .section-header{
