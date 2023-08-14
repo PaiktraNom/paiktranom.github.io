@@ -1,6 +1,3 @@
-$(document).ready(function(){
-  $(".content").load("templates/home.html");
-});
 $(".nav-item button").on("click", function(e) {
     if ($(this).attr("class") === "nav"){
         var input = $(this).val(); 
@@ -8,7 +5,7 @@ $(".nav-item button").on("click", function(e) {
         $(this).toggleClass("active");
         // prevent page submit
         e.preventDefault();
-        $(".page").load(input);
+        $(".content").load(input);
     }
 });
 
