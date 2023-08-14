@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    $(".page").load("templates/home.html");
+
     $('#contact').click(function (event) {
         var email = 'paiktranom@gmail.com';
         var subject = 'Contact Paiktra Nom';
