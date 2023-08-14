@@ -6,7 +6,7 @@
 }
 
 html * {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.625;
     color: gray;
     font-family: anybody;
@@ -34,8 +34,8 @@ body {
 
 .content{
     margin-top: 2rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
     margin-bottom: 2rem;
 }
 
@@ -58,17 +58,30 @@ footer {
 header h1{
     font-size: 50px;
     font-weight: bold;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
 
+.home-header{
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(180, 180, 180);
+}
+
+.home-section{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(180, 180, 180);
+}
+
+
 .navbar{
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-radius: 5px;
 }
 .nav-item{
-    height: 100%;
-    margin: 1rem;
+    margin-left: 1rem;
 }
 
 #page-container {
@@ -77,11 +90,7 @@ header h1{
   }
 
 .row {
-    display: inline-block;
-    .text{
-        align-self: flex-end;
-    }
-
+    display: flex;
 }
 
 .section-header{
@@ -91,5 +100,22 @@ header h1{
 }
 
 small{
-    line-height: 100px
+    line-height: 75px;
 }
+
+/* Animation stuff */
+
+  .wavy span{
+    font-weight: bold;
+    color: rgb(180, 180, 180);
+    position: relative;
+    display: inline-block;
+    animation: wavyText 2s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+  }
+
+  @keyframes wavyText {
+    0%   {transform: translateY(0.25em);}
+    60%  {transform: translateY(-0.25em);}
+    100%  {transform: translateY(0.25em);}
+  }
