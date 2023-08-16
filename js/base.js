@@ -1,5 +1,5 @@
 $(".nav-item a").on("click", function(e) {
-    if ($(this).attr("class") === "nav-link"){
+    if ($(this).attr("class") === "nav-link nav"){
         
         var temp = $(this).attr('id'); 
         var html = "templates/" + temp + ".html"
