@@ -21,17 +21,20 @@ $( document ).ready(function() {
         }
     });
     
-    $('#contact').on("click", function (event) {
+    $('#contact').on("click", function (e) {
         event.stopImmediatePropagation();
-        document.getElementById('scroll-to-end').scrollIntoView();
+        document.getElementById('scroll-to-end').scrollIntoView({block: "start", behavior: "smooth"});
+        // prevent page submit
+        e.preventDefault();
     });
     
-    $('#email').on("click", function (event) {
-        alert("email button works");
+    $('#email').on("click", function (e) {
         var email = 'paiktranom@gmail.com';
         var subject = 'Contact Paiktra Nom';
         var emailBody = 'Hi Paiktra,\n';
         document.location = "mailto:"+email+"?subject="+subject+"&body="+emailBody;
+        // prevent page submit
+        e.preventDefault();
     });
 });
 
