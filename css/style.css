@@ -24,12 +24,29 @@
   .nav-link{
     padding:8px;
   }
+
 }
 
 @media (max-width: 1200px) { /* Content width */
   .nav-link{
     padding:8px;
   }
+
+  .landing-grid{
+    grid-template-columns: [first] 16rem [second] 15rem; /* add to 720 */
+    grid-template-rows: [first] auto [second] 6rem [third] auto [last] auto;
+  }
+
+  .landing-img{
+    justify-self: center;
+    border-radius: 50%;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+}
+
+.about-grid{
+  display:grid;
 }
 
 .about-img {
@@ -37,12 +54,16 @@
 }
 
 body {
+    background-color: #281150;
+    width:100%;
+    
     margin:0;
     padding:0;
+
 }
 
 .section-container{
-  margin: auto;
+  margin-bottom: 400px;
   max-width: 1200px;
 }
 
@@ -53,40 +74,46 @@ body {
 }
 
 .content{
-    margin-top: 7rem;
-    margin-bottom: 2rem;
-    width:auto;
-    height: auto;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 160px;
+  width:auto;
+  height: auto;
 }
 
 #content-wrap {
-    padding-bottom: 7rem;    /* Footer height */
+    padding-bottom: 10rem;    /* Footer height */
   }
 
 footer {
     position: absolute;
-    margin-top: 2rem;
+    display: block;
+    margin-top: auto;
     bottom: 0;
     width: 100%;
     height: 10rem;   /* Footer height */
     text-align: center;
-    margin: auto;
-    
-    background-color: rgb(37, 37, 37);
+
+
+    background-color: gray;
+    /* background-color: #281150; */
   }
 
+header h1{
+  font-size: 50px;
+  font-weight: bold;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .landing-grid {
+  width: 100%;
   margin: 20px;
   display: grid;
   grid-template-columns: [first] 16rem [second] 30rem [last] auto;
   grid-template-rows: [first] auto [second] 6rem [third] auto [last] auto;
-}
-
-header h1{
-    font-size: 50px;
-    font-weight: bold;
-    margin-left: 1rem;
-    margin-right: 1rem;
 }
 
 .landing-img{
@@ -133,6 +160,7 @@ header h1{
 .navbar{
     max-width: 1200px;
     margin:auto;
+    margin-top: 2rem;
 }
 
 .navbar-toggler-icon{
@@ -164,7 +192,6 @@ header h1{
 .section-header{
     font-size: 30px;
     font-weight: bold;
-    color: rgb(180, 180, 180);
 }
 
 small{
