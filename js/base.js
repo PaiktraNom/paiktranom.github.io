@@ -1,27 +1,37 @@
 window.onload = function(){
-    $(".content").load("templates/home.html");
+    $(".landing").load("templates/landing.html");
+    $(".end").load("templates/end.html");
 };
 
-$(".nav-item a").on("click", function(e) {
-    var navLink = $(this).attr("class");
-    if (!navLink.includes("active")){
-        
-        var temp = $(this).attr('id'); 
-        var html = "templates/" + temp + ".html"
-
-        $("a").removeClass("active");
-        $(this).toggleClass("active");
-
-        // prevent page submit
-        e.preventDefault();
-        // Load in template
-        $(".content").load(html);
-    }
+$( document ).ready(function() {
+    $(".nav-item a").on("click", function(e) {
+        var navLink = $(this).attr("class");
+        if (!navLink.includes("active")){
+            
+            var temp = $(this).attr('id'); 
+            var html = "templates/" + temp + ".html"
+    
+            $("a").removeClass("active");
+            $(this).toggleClass("active");
+    
+            // prevent page submit
+            e.preventDefault();
+            // Load in template
+            $(".content").load(html);
+        }
+    });
+    
+    $('#contact').on("click", function (event) {
+        event.stopImmediatePropagation();
+        document.getElementById('scroll-to-end').scrollIntoView();
+    });
+    
+    $('#email').on("click", function (event) {
+        alert("email button works");
+        var email = 'paiktranom@gmail.com';
+        var subject = 'Contact Paiktra Nom';
+        var emailBody = 'Hi Paiktra,\n';
+        document.location = "mailto:"+email+"?subject="+subject+"&body="+emailBody;
+    });
 });
 
-$('#contact').click(function (event) {
-    var email = 'paiktranom@gmail.com';
-    var subject = 'Contact Paiktra Nom';
-    var emailBody = 'Hi Paiktra,\n';
-    document.location = "mailto:"+email+"?subject="+subject+"&body="+emailBody;
-  });
