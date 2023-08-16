@@ -21,6 +21,7 @@ $( document ).ready(function() {
         }
     });
     
+    
     $('#contact').on("click", function (e) {
         event.stopImmediatePropagation();
         document.getElementById('scroll-to-end').scrollIntoView({block: "start", behavior: "smooth"});
