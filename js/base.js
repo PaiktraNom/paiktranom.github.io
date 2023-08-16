@@ -1,3 +1,7 @@
+window.onload = function(){
+    $(".content").load("templates/home.html");
+};
+
 $(".nav-item a").on("click", function(e) {
     var navLink = $(this).attr("class");
     if (!navLink.includes("active")){
