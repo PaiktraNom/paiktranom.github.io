@@ -1,5 +1,6 @@
 $(".nav-item a").on("click", function(e) {
-    if ($(this).attr("class") === "nav-link nav"){
+    var navLink = $(this).attr("class");
+    if (!navLink.includes("active")){
         
         var temp = $(this).attr('id'); 
         var html = "templates/" + temp + ".html"

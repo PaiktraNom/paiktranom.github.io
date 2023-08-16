@@ -20,10 +20,20 @@
       z-index: -1; } }
 
       
-@media (max-width: 767px) {
-  header {
-      display:none;
+@media (max-width: 767px) { /* Phone sizes */
+  .nav-link{
+    padding:8px;
   }
+}
+
+@media (max-width: 1200px) { /* Content width */
+  .nav-link{
+    padding:8px;
+  }
+}
+
+.about-img {
+  border-radius: 10px;
 }
 
 body {
@@ -31,8 +41,15 @@ body {
     padding:0;
 }
 
+.section-container{
+  margin: auto;
+  max-width: 1200px;
+}
+
 .container-fluid{
   padding:0;
+  margin-left: 20px;
+  margin-right: 20px
 }
 
 .content{
@@ -58,7 +75,8 @@ footer {
     background-color: rgb(37, 37, 37);
   }
 
-.grid {
+.landing-grid {
+  margin: 20px;
   display: grid;
   grid-template-columns: [first] 16rem [second] 30rem [last] auto;
   grid-template-rows: [first] auto [second] 6rem [third] auto [last] auto;
@@ -69,11 +87,6 @@ header h1{
     font-weight: bold;
     margin-left: 1rem;
     margin-right: 1rem;
-}
-
-.landing{
-  margin: auto;
-  max-width: 1200px;
 }
 
 .landing-img{
@@ -121,12 +134,14 @@ header h1{
     max-width: 1200px;
     margin:auto;
 }
-.nav-item{
-    margin-left: 1rem;
+
+.navbar-toggler-icon{
+  padding-top: 2px;
 }
 
 .nav-link{
   -webkit-text-fill-color: whitesmoke;
+  font-size: 20px;
 }
 
 #page-container {
@@ -136,12 +151,14 @@ header h1{
 
 .phonics {
   align-self:end;
+  font-size: 20px;
   grid-column: 2 / 3;
   grid-row: 1 / 2;
 }
 
 .seafoam{
-  color: #67FFB3
+  color: #67FFB3;
+  border-color:#67FFB3;
 }
 
 .section-header{
@@ -156,19 +173,43 @@ small{
 
 /* Animation stuff */
 
-  .wavy span{
-    font-weight: normal;
-    position: relative;
-    display: inline-block;
-    animation: wavyText 2s ease-in-out infinite;
-    animation-delay: calc(0.1s * var(--i));
-  }
+.wavy span{
+  font-weight: normal;
+  position: relative;
+  display: inline-block;
+  animation: wavyText 2s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
 
-  @keyframes wavyText {
-    0%   {transform: translateY(0.25em);}
-    60%  {transform: translateY(-0.25em);}
-    100%  {transform: translateY(0.25em);}
-  }
+@keyframes wavyText {
+  0%   {transform: translateY(0.25em);}
+  60%  {transform: translateY(-0.25em);}
+  100%  {transform: translateY(0.25em);}
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #67FFB3;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 
 /* Global */
 html * {
