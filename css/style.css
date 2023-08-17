@@ -4,27 +4,28 @@
     font-style: normal;
 }
 
-@keyframes fadeinall {
-    0% {
-      opacity: 1; }
-    97% {
-      opacity: 0; }
-    98% {
-      opacity: 0;
-      -webkit-transform: translateY(0);
-      transform: translateY(0); }
-    100% {
-      opacity: 0;
-      -webkit-transform: translateY(-100%);
-      transform: translateY(-100%);
-      z-index: -1; } }
+/* about */
+
+.aboutme{
+  
+}
 
 .about-grid{
   display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(190px, 1fr));
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.about-greeting{
+  font-size: 20px;
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
 }
 
 .about-img {
-  border-radius: 10px;
+  border-radius: 20px;
+  grid-row: 1 / 4;
+  grid-column: 1 / 2;
 }
 
 html{
@@ -37,18 +38,36 @@ body {
   background-color: #281150;
   margin: auto !important;
   padding:0;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation { /* For body*/
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+.end-section-character{
+  text-align: center;
 }
 
 .section-container{
   margin-bottom: 400px;
   max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .content{
   display:flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   margin-top: 160px;
   width:auto;
   height: auto;
@@ -100,6 +119,14 @@ footer {
 header h1{
   font-size: 50px;
   font-weight: bold;
+}
+
+/* landing */
+
+.landing{
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .landing-grid {
@@ -196,6 +223,13 @@ header h1{
 
 small{
     line-height: 75px;
+}
+
+.white-background{
+  background-color: #F5FFFC;
+  flex-grow: 1;
+  width: 100%;
+  -webkit-text-fill-color: #696BFF;
 }
 
 /* Phone stuff */
