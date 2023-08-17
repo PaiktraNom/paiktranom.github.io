@@ -1,29 +1,29 @@
-window.onload = function(){
-    $(".landing").load("templates/landing.html");
-    $(".end").load("templates/end.html");
-};
-
 $( document ).ready(function() {
-    $(".nav-item a").on("click", function(e) {
-        var navLink = $(this).attr("class");
-        if (!navLink.includes("active")){
-            
-            var temp = $(this).attr('id'); 
-            var html = "templates/" + temp + ".html"
-    
-            $("a").removeClass("active");
-            $(this).toggleClass("active");
-    
-            // prevent page submit
-            e.preventDefault();
-            // Load in template
-            $(".content").load(html);
-        }
-    });
-    
+
+    fetch("templates/landing.html")
+        .then(response => {
+            return response.text()
+        })
+        .then(data => {
+            document.querySelector(".landing").innerHTML = data;
+        });
+    fetch("templates/about.html")
+        .then(response => {
+            return response.text()
+        })
+        .then(data => {
+            document.querySelector(".about").innerHTML = data;
+        });
+    fetch("templates/end.html")
+        .then(response => {
+            return response.text()
+        })
+        .then(data => {
+            document.querySelector(".end").innerHTML = data;
+        });
     
     $('#contact').on("click", function (e) {
-        event.stopImmediatePropagation();
+        e.stopImmediatePropagation();
         document.getElementById('scroll-to-end').scrollIntoView({block: "start", behavior: "smooth"});
         // prevent page submit
         e.preventDefault();
