@@ -23,20 +23,14 @@
 @media (max-width: 767px) { /* Phone sizes */
   .nav-link{
     padding:8px;
+    font-size: 24px;
   }
-
 }
 
 @media (max-width: 1200px) { /* Content width */
   .nav-link{
     padding:8px;
   }
-
-  .landing-grid{
-    grid-template-columns: [first] 16rem [second] 15rem; /* add to 720 */
-    grid-template-rows: [first] auto [second] 6rem [third] auto [last] auto;
-  }
-
   .landing-img{
     visibility: hidden;
   }
@@ -69,8 +63,8 @@ body {
 
 .container-fluid{
   padding:0;
-  margin-left: 20px;
-  margin-right: 20px
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .content{
@@ -134,7 +128,6 @@ header h1{
 }
 
 .landing-grid {
-  margin: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
