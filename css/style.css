@@ -23,7 +23,7 @@
 @media (max-width: 767px) { /* Phone sizes */
   .nav-link{
     padding:8px;
-    font-size: 24px;
+    font-size: 32px;
   }
 }
 
@@ -42,6 +42,11 @@
 
 .about-img {
   border-radius: 10px;
+}
+
+html{
+  margin:0;
+  padding:0;
 }
 
 body {
@@ -79,6 +84,8 @@ body {
 
 #content-wrap {
     padding-bottom: 140px;    /* Footer height */
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .end-icon-container{
@@ -128,6 +135,7 @@ header h1{
 }
 
 .landing-grid {
+  margin: 40px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
