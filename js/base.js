@@ -20,10 +20,10 @@ $( document ).ready(function() {
             $(".content").load(html);
         }
     });
-    
+
     
     $('#contact').on("click", function (e) {
-        event.stopImmediatePropagation();
+        e.stopImmediatePropagation();
         document.getElementById('scroll-to-end').scrollIntoView({block: "start", behavior: "smooth"});
         // prevent page submit
         e.preventDefault();
