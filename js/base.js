@@ -28,6 +28,11 @@ function scrollToEnd() {
     return false;
 }
 
+function scrollToAbout() {
+    document.getElementById('scroll-to-about').scrollIntoView({ block: "start", behavior: "smooth" });
+    return false;
+}
+
 function email(){
     var email = 'paiktranom@gmail.com';
     var subject = 'Contact Paiktra Nom';
