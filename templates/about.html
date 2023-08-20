@@ -2,7 +2,19 @@
 
 <html> 
   <body>
-    <div class="white-background">
+    <div class="about-wave-top">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
+        <defs>
+           <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="wavies">
+          <use xlink:href="#gentle-wave" x="50" y="0" fill="#d5d5d5"/>
+          <use xlink:href="#gentle-wave" x="50" y="2" fill="#e5e5e5"/>
+          <use xlink:href="#gentle-wave" x="50" y="4" fill="#F5FFFC"/>  
+        </g>
+       </svg>
+    </div>
+    <div class="white-background" id="scroll-to-about">
       <div class="section-container">
         <div class="about-grid">
           <div class="about-img">
@@ -15,12 +27,14 @@
             About me
           </div>
           <div class="about-desc">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-            culpa qui officia deserunt mollit anim id est laborum."
+            Thank you for checking out my portfolio! I'm a software engineer living in North 
+            Carolina, USA. In the last 3 years, I have worked in front-end development, back-end 
+            development, and software internet security. Alongside I have profiency in agile 
+            methodology and git practices. I enjoy activities like rock climbing, hiking,
+            and cooking.
+            <br>
+            <br>
+            I am interested in a role where I can further expand my technical skillset.
           </div>
           <ul class="about-icon-container">
             <li class="about-icon">
@@ -41,6 +55,18 @@
           </ul>
         </div>
       </div>
+    </div>
+    <div class="about-wave-bottom" style="transform:rotate(180deg)">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
+        <defs>
+           <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="wavies">
+          <use xlink:href="#gentle-wave" x="50" y="0" fill="#d5d5d5"/>
+          <use xlink:href="#gentle-wave" x="50" y="2" fill="#e5e5e5"/>
+          <use xlink:href="#gentle-wave" x="50" y="4" fill="#F5FFFC"/>  
+        </g>
+       </svg>
     </div>
     <script src="js/base.js"></script>
   </body> 
