@@ -120,8 +120,8 @@ body {
 }
 
 .section-container{
-  padding-top:180px;
-  padding-bottom: 180px;
+  padding-top:200px;
+  padding-bottom: 200px;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -188,6 +188,7 @@ header h1{
 
 .landing-section-container{
   padding-top: 0;
+  padding-bottom: 50px;
 }
 
 .landing{
@@ -246,11 +247,38 @@ header h1{
   grid-row: 4 / 5;
 
 }
+
+.landing-scroll{
+  width: max-content;
+  margin-top: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #696BFF;
+  font-size: 25px;
+  text-decoration: none!important;
+  -webkit-text-fill-color: #281150!important;
+  font-weight: bold;
+  transition: all .2s ease-in-out;
+
+  border-radius: 500px;
+
+  grid-column: 1 / 2;
+  grid-row: 5 / 6;
+}
+
+.landing-scroll:hover{
+  transform: translateY(7px);
+}
+
 .navbar{
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
-    margin-top: 2rem;
+    margin-top: 50px;
+
+    margin-bottom: 50px;
 }
 
 .navbar-toggler-icon{
@@ -281,13 +309,17 @@ header h1{
   border-color:#67FFB3;
 }
 
-.section-header{
-    font-size: 30px;
-    font-weight: bold;
-}
-
 small{
     line-height: 75px;
+}
+
+.tech-section{
+  text-align: center;
+}
+
+.tech-title{
+  font-size: 64px;
+  text-decoration: underline;
 }
 
 .white-background{
@@ -346,7 +378,7 @@ small{
   .landing-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));;
-    grid-template-rows: repeat(3, 50px);
+    grid-template-rows: repeat(5, 50px);
   }
 
   .landing-greeting{ /* Hello! */
@@ -453,9 +485,9 @@ small{
 
 .wavies > use{
   animation: waveAround 12s linear infinite;
-  &:nth-child(1) { animation-delay:-2s; }
-  &:nth-child(2) { animation-delay:-2s; animation-duration:5s }
-  &:nth-child(3) { animation-delay:-4s; animation-duration:3s }
+  &:nth-child(1) { animation-delay:-3s; animation-duration:21s }
+  &:nth-child(2) { animation-delay:-5s; animation-duration:18s }
+  &:nth-child(3) { animation-delay:-7s; animation-duration:15s }
 }
 
 @keyframes waveAround{
