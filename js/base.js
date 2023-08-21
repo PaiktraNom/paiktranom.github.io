@@ -47,4 +47,3 @@ function email(){
     document.location = "mailto:"+email+"?subject="+subject+"&body="+emailBody;
     return false;
 }
-
