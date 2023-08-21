@@ -42,7 +42,7 @@ body {
   margin-right: 20px;
   display:grid;
   grid-template-columns:repeat(auto-fit, minmax(190px, 1fr));
-  grid-template-rows: repeat(5, minmax(50px, 1fr));
+  grid-template-rows: 100px 100px repeat(3, minmax(50px, 1fr));
 }
 
 .aboutme{
@@ -65,6 +65,7 @@ body {
 }
 
 .about-desc{
+  padding-top: 20px;
   font-size: 20px;
   align-self: center;
   grid-row: 3 / 5;
@@ -150,6 +151,7 @@ body {
 
 .end-section-container{
   text-align: center;
+  margin-top: 150px;
   margin-bottom: 200px;
 }
 
@@ -472,19 +474,14 @@ small{
   }
 
   .section-container{
-    margin-top: 0;
     padding:0;
   }
 
   .landing-section-container{
     padding-bottom:50px;
   }
-
-  #scroll-to-end{
-    scroll-margin-top: 150px;
-  }
-  .end-icon{ 
-    width: 100%
+  .tech-title{
+    font-size: 40px;
   }
 }
 
@@ -499,6 +496,7 @@ small{
   .about-grid {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: 100px 100px;
   }
   .about-img{
     visibility: hidden;
