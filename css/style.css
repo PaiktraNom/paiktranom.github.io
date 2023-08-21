@@ -320,6 +320,34 @@ small{
 .tech-title{
   font-size: 64px;
   text-decoration: underline;
+  margin:40px
+}
+
+.tech-item-header{
+  font-size: 40px;
+  margin:20px;
+}
+
+.tech-list{
+  max-width: 800px;
+  padding:0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  list-style-type: none
+}
+
+.tech-item{
+  font-size: 24px;
+  padding:10px;
+  background-color: #F5FFFC;
+  -webkit-text-fill-color: #281150;
+  font-weight: bold;
+  border-radius: 500px;
+  margin:10px;
 }
 
 .white-background{
