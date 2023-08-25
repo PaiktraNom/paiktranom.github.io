@@ -276,7 +276,7 @@ header h1{
   font-weight: lighter;
   align-self: center;
 
-  grid-column: 1 / 2;
+  grid-column: 1 / 4;
   grid-row: 3 / 4;
 }
 
@@ -401,6 +401,10 @@ small{
   -webkit-text-fill-color: #F5FFFC;
 
 
+}
+
+#scroll-to-about{
+  scroll-margin-top: 100px;
 }
 
 .scroll-to-end{
