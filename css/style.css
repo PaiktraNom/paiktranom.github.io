@@ -313,6 +313,82 @@ header h1{
   transform: translateY(7px);
 }
 
+/* Experience Timeline */
+
+.timeline {
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Outer Layer with the timeline border */
+.outer {
+  border-left: 5px dashed #6022B1;
+  height: 500px;
+  overflow: visible;
+  margin: 0 30px 0 20px;
+}
+
+/* Card container */
+.card {
+  bottom:10px;
+  position: relative;
+  margin: 0 0 50px 50px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #F5FFFC;
+  border:none;
+  list-style: square;
+  -webkit-text-fill-color: #281150;
+}
+
+/* Information about the timeline */
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title of the card */
+.title {
+  position: relative;
+  font-weight: bold;
+  -webkit-text-fill-color: #6022B1;
+}
+
+/* Timeline dot  */
+.title::before {
+  text-align: center;
+  text-justify: auto;
+  vertical-align: bottom;
+  padding:20px;
+  font-size: 48px;
+  -webkit-text-fill-color:#F5FFFC;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #6022B1;
+  border-radius: 999px;
+  left: -113px;
+}
+
+.education::before{
+  font-family: 'FontAwesome';
+  content: "\f19d";
+}
+.job::before{
+  font-family: 'FontAwesome';
+  content: "\f0b1";
+}
+
+.education-info{
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+.short-name{
+  display: none;
+}
+
 .navbar{
     margin-left: auto;
     margin-right: auto;
@@ -499,12 +575,15 @@ small{
     visibility: hidden;
   }
 
-  .phonics { 
-    visibility: hidden;
+  .short-name{
+    display: inline-block;
+  }
+  .full-name{
+    display: none;
   }
 
-  .section-container{
-    padding:0;
+  .phonics { 
+    visibility: hidden;
   }
 
   .landing-section-container{

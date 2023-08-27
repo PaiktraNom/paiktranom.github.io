@@ -21,6 +21,13 @@ $( document ).ready(function() {
         .then(data => {
             document.querySelector(".tech").innerHTML = data;
         });
+    fetch("templates/experience.html")
+        .then(response => {
+            return response.text()
+        })
+        .then(data => {
+            document.querySelector(".experience").innerHTML = data;
+        });
     fetch("templates/end.html")
         .then(response => {
             return response.text()
