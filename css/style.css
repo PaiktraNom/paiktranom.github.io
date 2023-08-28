@@ -190,11 +190,13 @@ body {
 
 .end-background{
   position: absolute;
+  overflow: hidden;
   left: 0;
   right: 0;
   margin: auto;
   transform: translateY(-40%);
   z-index: -1;
+  width:100%
 }
 
 .end-icon{
@@ -445,6 +447,19 @@ header h1{
   margin-top: 200px;
 }
 
+.proj-header-small{
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: underline;
+  font-size: 56px;
+  -webkit-text-fill-color: #696BFF;
+  font-weight: bolder;
+  display: none;
+  margin-bottom: 100px;
+
+}
+
+
 .proj-card{
   display:flex;
   flex-direction: column;
@@ -646,6 +661,17 @@ small{
   .phonics { 
     visibility: hidden;
   }
+  .proj-card{
+    margin: 20px;
+  }
+
+  .proj-title{
+    font-size: 48px;
+  }
+  .proj-desc{
+    font-size: 20px;
+  }
+
 
   .landing-section-container{
     padding-bottom:50px;
@@ -680,6 +706,13 @@ small{
   .keyboard{
     visibility: hidden;
   }
+  .proj-header{
+    display: none;
+  }
+  .proj-header-small{
+    display: inline-block;
+  }
+
 
 }
 
