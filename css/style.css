@@ -188,6 +188,15 @@ body {
   display: inline-block;
 }
 
+.end-background{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translateY(-40%);
+  z-index: -1;
+}
+
 .end-icon{
   font-size: 24px;
   display: block;
