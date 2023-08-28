@@ -584,6 +584,42 @@ small{
   -webkit-text-fill-color: #696BFF;
 }
 
+@media (max-width: 1200px) { /* Content width */
+  .nav-link{
+    padding:8px;
+  }
+  .proj-card{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: 100px 100px;
+  }
+  .about-img{
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 1600px) { /* Content width */
+  .cogs-grid{
+    visibility: hidden;
+  }
+  .keyboard{
+    visibility: hidden;
+  }
+  .proj-header{
+    display: none;
+  }
+  .proj-header-small{
+    display: inline-block;
+  }
+
+
+}
+
 /* Phone stuff */
 
 @media screen and (max-width: 767px) { /* Phone sizes */
@@ -679,41 +715,6 @@ small{
   .tech-title{
     font-size: 40px;
   }
-}
-
-@media (max-width: 1200px) { /* Content width */
-  .nav-link{
-    padding:8px;
-  }
-  .landing-img{
-    visibility: hidden;
-  }
-
-  .about-grid {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    grid-template-rows: 100px 100px;
-  }
-  .about-img{
-    visibility: hidden;
-  }
-}
-
-@media (max-width: 1600px) { /* Content width */
-  .cogs-grid{
-    visibility: hidden;
-  }
-  .keyboard{
-    visibility: hidden;
-  }
-  .proj-header{
-    display: none;
-  }
-  .proj-header-small{
-    display: inline-block;
-  }
-
-
 }
 
 /* Animation stuff */
