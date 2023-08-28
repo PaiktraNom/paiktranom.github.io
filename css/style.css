@@ -421,6 +421,62 @@ header h1{
   grid-row: 1 / 2;
 }
 
+.projs{
+  margin-top: 200px;
+  padding-top: 0;
+}
+
+.proj-header{
+  font-size: 128px;
+  -webkit-text-fill-color: #696BFF;
+  font-weight: bolder;
+  transform:rotate(-90deg);
+  position: absolute;
+  left:50px;
+  margin-top: 200px;
+}
+
+.proj-card{
+  display:flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin-left: 200px;
+  gap:10px;
+}
+
+.proj-title{
+  -webkit-text-fill-color: #696BFF;
+  font-size: 64px;
+}
+
+.proj-desc{
+  font-size: 32px;
+  font-weight: 200;
+}
+
+.proj-button{
+  font-size: 24px;
+  list-style-type: none;
+  font-weight: normal;
+  margin:30px;
+  margin-left: 0;
+  transition: all .2s ease-in-out;
+}
+
+.proj-live{
+  padding:10px;
+  text-decoration: none;
+  background-color: #696BFF;
+  width: fit-content;
+  border-radius: 100px;
+}
+
+.proj-button:hover{
+  transform: translateX(7px);
+}
+
+
+
 .seafoam{
   color: #67FFB3;
   border-color:#67FFB3;
@@ -475,8 +531,6 @@ small{
   font-size: 36px;
   text-align: center;
   -webkit-text-fill-color: #F5FFFC;
-
-
 }
 
 #scroll-to-about{
@@ -490,8 +544,6 @@ small{
 .scroll-to-end:hover{
   transform: translateY(7px);
 }
-
-
 
 .hidden{
   opacity: 0;

@@ -28,6 +28,13 @@ $( document ).ready(function() {
         .then(data => {
             document.querySelector(".experience").innerHTML = data;
         });
+    fetch("templates/project.html")
+        .then(response => {
+            return response.text()
+        })
+        .then(data => {
+            document.querySelector(".project").innerHTML = data;
+        });
     fetch("templates/end.html")
         .then(response => {
             return response.text()
