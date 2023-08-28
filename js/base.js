@@ -1,8 +1,3 @@
-window.onload = function(){
-    $(".landing").load("templates/landing.html");
-    $(".end").load("templates/end.html");
-};
-
 $( document ).ready(function() {
     $(".nav-item a").on("click", function(e) {
         var navLink = $(this).attr("class");
@@ -20,10 +15,10 @@ $( document ).ready(function() {
             $(".content").load(html);
         }
     });
-
+    
     
     $('#contact').on("click", function (e) {
-        e.stopImmediatePropagation();
+        event.stopImmediatePropagation();
         document.getElementById('scroll-to-end').scrollIntoView({block: "start", behavior: "smooth"});
         // prevent page submit
         e.preventDefault();

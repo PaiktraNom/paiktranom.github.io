@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Pat Nom</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width" height="device-height" initial-scale="1" , maximum-scale="1" />
   <meta name="description" content="" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/d178f66920.js" crossorigin="anonymous"></script>
@@ -13,7 +13,7 @@
   <link rel="icon" href="/static/img/pat_w.png">
 </head>
 
-<body class>
+<body>
   <div id="page-container">
     <div id="content-wrap">
       <nav class="navbar navbar-expand-lg">
@@ -44,13 +44,13 @@
                 <a class="hover-underline-animation nav-link nav active" id="landing" href="#">Home</a>
               </li>
               <li class="nav-item d-flex justify-content-end">
-                <a class="hover-underline-animation nav-link nav" id="about" href="#">About</a>
+                <a class="hover-underline-animation nav-link nav" id="about" href="#!" onclick="scrollToAbout()">About</a>
               </li>
               <li class="nav-item d-flex justify-content-end">
                 <a class="hover-underline-animation nav-link nav" id="resume" href="/static/nomResume.pdf" target="_blank">Resume</a>
               </li>
               <li class="nav-item d-flex justify-content-end">
-                <a class="hover-underline-animation nav-link nav" id="contact" href="#">Contact Me</a>
+                <a class="hover-underline-animation nav-link nav" id="contact" href="#!" onclick="scrollToEnd()">Contact Me</a>
               </li>
             </ul>
           </div>
@@ -59,6 +59,34 @@
     <!--Show individual pages here-->
     <div class="content">
       <div class="landing"></div>
+      <div class="about-wave-top">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
+          <defs>
+             <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+          </defs>
+          <g class="wavies">
+            <use xlink:href="#gentle-wave" x="50" y="0" fill="#7fffbf"/>
+            <use xlink:href="#gentle-wave" x="50" y="2" fill="#c6ffe4"/>
+            <use xlink:href="#gentle-wave" x="50" y="4" fill="#F5FFFC"/>  
+          </g>
+         </svg>
+      </div>
+      <div class="about"></div>
+      <div class="experience"></div>
+      <div class="about-wave-bottom" style="transform:rotate(180deg)">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
+          <defs>
+             <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+          </defs>
+          <g class="wavies">
+            <use xlink:href="#gentle-wave" x="50" y="0" fill="#7fffbf"/>
+            <use xlink:href="#gentle-wave" x="50" y="2" fill="#c6ffe4"/>
+            <use xlink:href="#gentle-wave" x="50" y="4" fill="#F5FFFC"/>  
+          </g>
+         </svg>
+      </div>
+      <div class="project"></div>
+      <div class="tech"></div>
       <div class="end" id="scroll-to-end"></div>
     </div>
     </div>
