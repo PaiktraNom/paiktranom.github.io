@@ -44,6 +44,19 @@ $( document ).ready(function() {
         });
 });
 
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 600) {
+        $('.landing').css({
+            'display': 'none'
+        });
+    }
+    if ($(this).scrollTop() < 600){
+        $('.landing').css({
+            'display': 'inline-block'
+        });
+    }
+});
+
 function scrollToEnd() {
     document.getElementById('scroll-to-end').scrollIntoView({ block: "start", behavior: "smooth" });
     return false;
