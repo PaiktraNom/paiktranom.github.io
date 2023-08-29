@@ -57,9 +57,9 @@
         </div>
       </nav>
     <!--Show individual pages here-->
+    <div class="landing"></div>
     <div class="content">
-      <div class="landing"></div>
-      <div class="about-wave-top">
+      <div class="about-wave-top" style="z-index:1;">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
           <defs>
              <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
@@ -71,9 +71,9 @@
           </g>
          </svg>
       </div>
-      <div class="about"></div>
-      <div class="experience"></div>
-      <div class="about-wave-bottom" style="transform:rotate(180deg)">
+      <div class="about" style="z-index:1;"></div>
+      <div class="experience" style="z-index:1;"></div>
+      <div class="about-wave-bottom" style="transform:rotate(180deg); z-index:1;">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
           <defs>
              <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
@@ -85,9 +85,9 @@
           </g>
          </svg>
       </div>
-      <div class="project"></div>
+      <div class="project" style="display:none"></div>
       <div class="tech"></div>
-      <div class="end" id="scroll-to-end"></div>
+      <div class="end" id="end-scroll-anchor"></div>
     </div>
     </div>
     <footer>
