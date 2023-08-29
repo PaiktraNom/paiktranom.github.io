@@ -58,12 +58,12 @@ $(window).scroll(function() {
 });
 
 function scrollToEnd() {
-    document.getElementById('scroll-to-end').scrollIntoView({ block: "start", behavior: "smooth" });
+    document.getElementById('end-scroll-anchor').scrollIntoView({ block: "start", behavior: "smooth" });
     return false;
 }
 
 function scrollToAbout() {
-    document.getElementById('scroll-to-about').scrollIntoView({ block: "start", behavior: "smooth" });
+    document.getElementById('about-scroll-anchor').scrollIntoView({ block: "start", behavior: "smooth" });
     return false;
 }
 
