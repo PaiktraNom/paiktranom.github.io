@@ -173,7 +173,7 @@ body {
   width:auto;
   height: auto;
   position: relative;
-  top:400px;
+  top:450px;
 
   z-index: 1;
 }
@@ -442,9 +442,12 @@ header h1{
   transform: translate(-50%, -50%);
 }
 
+.project{
+  height:1000px;
+}
+
 .projs{
-  margin-top: 200px;
-  padding-top: 0;
+  z-index: 0;
 }
 
 .proj-header{
@@ -455,6 +458,7 @@ header h1{
   position: absolute;
   left:50px;
   margin-top: 200px;
+  left:-20%;
 }
 
 .proj-header-small{
@@ -494,6 +498,7 @@ header h1{
   font-weight: normal;
   margin:30px;
   margin-left: 0;
+  width:fit-content;
   transition: all .2s ease-in-out;
 }
 
@@ -567,7 +572,7 @@ small{
   -webkit-text-fill-color: #F5FFFC;
 }
 
-#scroll-to-about{
+#about-scroll-anchor{
   scroll-margin-top: 100px;
 }
 
@@ -661,6 +666,16 @@ small{
     }
   }
 
+  .content{
+    top:0px;
+  }
+
+  #content-wrap {
+    width: 100%;
+    margin-top: 40px;
+    padding-bottom: 100px;    /* Footer height */
+  }
+
   .end-icon{
     flex: 1 100%
   }
@@ -707,17 +722,29 @@ small{
   .phonics { 
     visibility: hidden;
   }
+
+  .parallax{
+    position: static;
+  
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
+
   .proj-card{
     margin: 20px;
   }
 
   .proj-title{
-    font-size: 48px;
+    font-size: 36px;
   }
   .proj-desc{
     font-size: 20px;
   }
 
+  #end-scroll-anchor{
+    scroll-margin-top: -200px;
+  }
 
   .landing-section-container{
     padding-bottom:50px;
