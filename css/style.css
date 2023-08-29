@@ -442,9 +442,12 @@ header h1{
   transform: translate(-50%, -50%);
 }
 
+.project{
+  height:1000px;
+}
+
 .projs{
-  margin-top: 200px;
-  padding-top: 0;
+  z-index: 0;
 }
 
 .proj-header{
@@ -455,6 +458,7 @@ header h1{
   position: absolute;
   left:50px;
   margin-top: 200px;
+  left:-20%;
 }
 
 .proj-header-small{
@@ -494,6 +498,7 @@ header h1{
   font-weight: normal;
   margin:30px;
   margin-left: 0;
+  width:fit-content;
   transition: all .2s ease-in-out;
 }
 
