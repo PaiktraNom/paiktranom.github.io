@@ -105,7 +105,24 @@ $(window).scroll(function() {
 
 
 function scrollToEnd() {
-    document.getElementById('end-scroll-anchor').scrollIntoView({ block: "start", behavior: "smooth" });
+    setTimeout(function () {
+        document.getElementById('end-scroll-anchor-1').scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+        });
+   }, 100);
+    //document.getElementById('end-scroll-anchor').scrollIntoView({ block: "start", behavior: "smooth" });
+    return false;
+}
+
+function scrollToEnd2() { //For some reason the contact me at the top does not want to go to the contact me card. it only sits on top of the element
+    setTimeout(function () {
+        document.getElementById('end-scroll-anchor-2').scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+        });
+   }, 100);
+    //document.getElementById('end-scroll-anchor').scrollIntoView({ block: "start", behavior: "smooth" });
     return false;
 }
 
