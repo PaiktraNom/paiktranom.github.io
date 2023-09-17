@@ -12,9 +12,9 @@ The website was developed between August 13th - August 31st
 * Week 3 - Tweak and modify each section
 
 ## Technologies Used
-* ![HTML5][HTML-shield]
-* ![CSS3][CSS-shield]
-* ![JavaScript][Javascript-shield]
+* ![HTML-shield]
+* ![CSS-shield]
+* ![Javascript-shield]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![JQuery][JQuery.com]][JQuery-url]
 * [![GitHub][Github-shield]][Github-url]
