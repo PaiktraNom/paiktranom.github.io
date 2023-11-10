@@ -479,6 +479,7 @@ header h1{
   flex-direction: column;
   max-width: 800px;
   margin-left: 200px;
+  /*margin-bottom: 200px;*/
   gap:10px;
 }
 
