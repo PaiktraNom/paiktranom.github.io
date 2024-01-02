@@ -1,6 +1,6 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-Portfolio website - https://pnomnom-web
+Portfolio website - https://pnomnom-web.github.io
 
 This is a website built to showcase my technical skills in HTML, JavaScript, and CSS
 
