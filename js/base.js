@@ -69,39 +69,7 @@ $(window).scroll(function() {
         });
     }
 });
-$(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-    if (scroll > 3300) {
-        $(".projs").removeClass("parallax");
-        $('.proj-header').css({
-            'left': '100px'
-        });
-        $('.proj-title').css({
-            'margin-left': '6px'
-        });
-        $('.proj-desc').css({
-            'margin-left': '6px'
-        });
-        $('.proj-button').css({
-            'margin-left': '6px'
-        });
-    }
-    else{
-        $(".projs").addClass("parallax");
-        $('.proj-header').css({
-            'left': '-240px'
-        });
-        $('.proj-title').css({
-            'margin-left': '0'
-        });
-        $('.proj-desc').css({
-            'margin-left': '0'
-        });
-        $('.proj-button').css({
-            'margin-left': '0'
-        });
-    }
-});
+
 
 
 function scrollToEnd() {

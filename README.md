@@ -1,6 +1,6 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-Portfolio website - https://paiktranom.github.io
+Portfolio website - https://pnomnom-web
 
 This is a website built to showcase my technical skills in HTML, JavaScript, and CSS
 
@@ -31,7 +31,7 @@ The website was developed between August 13th - August 31st
 * Website Design: [Asia Powojska]([Asia])
 * Website Logo: [Asia Powojska]([Asia])
 * Domain: GitHub Pages
-* Web developer: [Paiktra Nom <-- Me!](https://github.com/PaiktraNom)
+* Web developer: [Paiktra Nom <-- Me!](https://github.com/pnomnom-web)
 
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
